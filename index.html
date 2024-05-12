@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Car Rental</title>
+
+    
+</head>
+
+<body>
+    <main style="border: 1px solid black; width: 50vw;">
+        <h1>Acme Car Rental</h1>
+
+        <form action="" style="padding: 10px;">
+            <label for="full-name">Full Name: </label>
+            <input type="text" id="full-name" name="full-name">
+            <br><br>
+            <label for="days">Number of days: </label>
+            <input type="text" id="days" name="days">
+            <br><br>
+            <label>Options</label><br>
+            <input type="checkbox" id="et" checked>Electronic Toll Tag ($3.95/day)<br>
+            <input type="checkbox" id="gps">GPS ($2.95/day)<br>
+            <input type="checkbox" id="ra">Roadside Assistance ($2.95/day)<br>
+            <br>
+            <label>Under 25</label><br>
+            <input type="radio" name="under25" id="notunder25" value="No">No
+            <input type="radio" name="under25" id="under25" value="Yes">Yes
+            <br>
+            <br>
+            <button type="button" id="est-tot-cost">Estimate Total Cost</button>
+
+        </form>
+
+        <br><br>
+        <hr>
+
+        <h3>Rental Summary</h3>
+        <p>Basic car rental is $29.99 per day</p>
+        <p>30% surcharge on the basic car rental for drivers under 25</p>
+
+        <table>
+            <tr>
+                <td>Customer Name: </td>
+                <td><span id="customer-name"></span></td>
+            </tr>
+
+            <tr>
+                <td>Car rental: </td>
+                <td><span id="car-rental"></span></td>
+            </tr>
+
+            <tr>
+                <td>Options: </td>
+                <td><span id="options"></span></td>
+            </tr>
+
+            <tr>
+                <td>Under 25 surcharges: </td>
+                <td><span id="un25sur"></span></td>
+            </tr>
+
+            <tr>
+                <td>Total due: </td>
+                <td><span id="total-due"></span></td>
+            </tr>
+        </table>
+
+
+    </main>
+    <script src="./scripts/index.js"></script>
+
+</body>
+
+</html>
